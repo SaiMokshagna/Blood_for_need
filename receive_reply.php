@@ -5,9 +5,9 @@ require_once 'twilio-php/src/Twilio/autoload.php';
 use Twilio\Rest\Client;
 
 // Twilio credentials
-$accountSid = 'AC04755ef929b01042bd2ee7c9be5f8e93';
-$authToken = '2e5a842b042cf2ae4e75d6ea003b60a2';
-$twilioPhoneNumber = '+15042221608';
+$accountSid = '_';
+$authToken = '_';
+$twilioPhoneNumber = '_';
 
 // Read the incoming Twilio message
 $from = $_POST['From'] ?? '';
@@ -72,3 +72,4 @@ if (!empty($from) && !empty($body)) {
     echo "Invalid request.";
 }
 ?>
+
